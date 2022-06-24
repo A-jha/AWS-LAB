@@ -8,11 +8,11 @@ int fib(int n)
         return n;
     }
 
-    int first = fib(n - 1);
-    int second = fib(n - 2);
-    return first + second;
+    int last = fib(n - 1);
+    int secondLast = fib(n - 2);
+    return last + secondLast;
 }
 int main()
 {
-    cout << fib(10);
+    cout << fib(7);
 }
